@@ -103,7 +103,6 @@ public class FaceCropImageView extends ImageView {
                 float viewScaleCorrection =  viewWidth / ( 2 * scale);
 
                 PointF drawableMiddlePoint = new PointF(drawableWidth / 2, drawableHeight / 2);
-                PointF viewMiddlePoint = new PointF(viewWidth / 2, viewHeight / 2);
 
                 leftLimit = drawableMiddlePoint.x - viewScaleCorrection;
                 rightLimit = drawableMiddlePoint.x + viewScaleCorrection;
