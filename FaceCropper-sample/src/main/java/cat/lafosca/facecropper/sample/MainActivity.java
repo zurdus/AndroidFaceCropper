@@ -54,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
         mFaceCropper = new FaceCropper(1f);
         mFaceCropper.setFaceMinSize(0);
         mFaceCropper.setMaxFaces(1);
-        mFaceCropper.setEyeDistanceFactorMargin(10);
+        mFaceCropper.setEyeDistanceFactorMargin(100000);
         mFaceCropper.setDebug(true);
         mPicasso = Picasso.with(this);
 
@@ -96,7 +96,7 @@ public class MainActivity extends ActionBarActivity {
             View v = getLayoutInflater().inflate(R.layout.pager_item, null, false);
 
             ImageView image = (ImageView) v.findViewById(R.id.imageView);
-            TopCropImage imageCropped = (TopCropImage) v.findViewById(R.id.imageViewCropped);
+            FaceCropImageView imageCropped = (FaceCropImageView) v.findViewById(R.id.imageViewCropped);
 
             mPicasso.load(urls[position]).transform(mDebugCropTransformation).into(image);
 

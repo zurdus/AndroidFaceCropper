@@ -12,7 +12,7 @@
         android:fitsSystemWindows="true"
         android:gravity="center"/>
 
-    <cat.lafosca.facecropper.sample.TopCropImage
+    <cat.lafosca.facecropper.sample.FaceCropImageView
         android:id="@+id/imageViewCropped"
         android:layout_width="match_parent"
         android:layout_height="0dp"

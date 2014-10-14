@@ -13,9 +13,9 @@ import cat.lafosca.facecropper.FaceCropper;
 public class CropTransformation implements Transformation {
     private FaceCropper mFaceCropper;
     private PointF faceCenter;
-    private TopCropImage v;
+    private FaceCropImageView v;
 
-    public CropTransformation(FaceCropper mFaceCropper, TopCropImage v) {
+    public CropTransformation(FaceCropper mFaceCropper, FaceCropImageView v) {
         this.mFaceCropper = mFaceCropper;
         this.v = v;
     }
